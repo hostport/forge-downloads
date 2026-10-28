@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'sha256-R2AJnGIEwymW6L+w+l4TA7WgZfAd4hR7GILi46v5q1I='; base-uri 'none'; form-action 'none'">
+<title>Download Hostport Forge 0.0.102</title>
+<meta name="description" content="Hostport Forge 0.0.102 for Linux: a desktop home for AI agents that work in terminals.">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #F5F7F8; --surface: #FFFFFF; --border: #D6DBDF; --text: #182430;
+  --dim: #35485A; --faint: #5A7183; --accent: #2C567E; --on-accent: #FFFFFF;
+  --code: #EDF1F4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202C3A; --surface: #263444; --border: #36485F; --text: #EDF2F8;
+    --dim: #B8C7D8; --faint: #8FA2B8; --accent: #88A8CF; --on-accent: #FFFFFF;
+    --code: #18212C;
+  }
+  .btn { background: #5579A7; }
+  .btn.quiet { background: transparent; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Ubuntu, sans-serif;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+h1 { font-size: 2rem; margin: 0 0 .5rem; letter-spacing: -.01em; }
+h1 span { font-weight: 500; color: var(--dim); }
+h2 { font-size: 1.05rem; margin: 2.5rem 0 .75rem; }
+p { margin: 0 0 .75rem; }
+.lede { color: var(--dim); font-size: 1.05rem; }
+.meta { color: var(--faint); font-size: .9rem; }
+a { color: var(--accent); }
+code {
+  font: .85rem/1.5 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  background: var(--code); padding: .1em .35em; border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+.offer { margin: 2rem 0 0; padding: 1.25rem; border: 1px solid var(--border);
+  border-radius: 10px; background: var(--surface); }
+.os { display: none; }
+html:not([data-os]) .os-other, html[data-os=other] .os-other,
+html[data-os=linux] .os-linux, html[data-os=windows] .os-windows,
+html[data-os=mac] .os-mac { display: block; }
+.btn { display: inline-block; background: var(--accent); color: var(--on-accent);
+  text-decoration: none; font-weight: 600; padding: .7rem 1.1rem; border-radius: 8px;
+  margin: 0 .5rem .5rem 0; }
+.btn small { font-weight: 400; opacity: .85; margin-left: .5rem; }
+.btn.quiet { background: transparent; color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--border); }
+.alt { font-size: .95rem; }
+ul.files { list-style: none; padding: 0; margin: 0; }
+ul.files li { padding: .9rem 0; border-top: 1px solid var(--border); }
+ul.files li:last-child { border-bottom: 1px solid var(--border); }
+.files .name { font-weight: 600; overflow-wrap: anywhere; }
+.files .what { color: var(--faint); font-size: .9rem; }
+.files div { margin-top: .3rem; font-size: .9rem; }
+ul.files + p { margin-top: 1rem; }
+.notes { white-space: pre-line; }
+ul.how { padding-left: 1.2rem; }
+footer { margin-top: 3rem; color: var(--faint); font-size: .85rem; }
+</style>
+<script>
+(function () {
+  var d = navigator.userAgentData, p = (d && d.platform) || navigator.platform || '',
+      ua = navigator.userAgent || '';
+  var os = /Android|iPhone|iPad/.test(ua) ? 'other'
+    : /^Win/.test(p) || /Windows/.test(ua) ? 'windows'
+    : /^Mac/.test(p) || /Mac OS X/.test(ua) ? 'mac'
+    : /Linux|X11|CrOS/.test(p + ' ' + ua) ? 'linux' : 'other';
+  document.documentElement.setAttribute('data-os', os);
+})();
+</script>
+</head>
+<body>
+<main>
+<h1><span>Hostport</span> Forge</h1>
+<p class="lede">A desktop home for AI agents that work in terminals. Open a folder, run as many agents as you like side by side, and give them one board and one memory, kept as plain files they read and write the same as you.</p>
+<p class="meta">Version 0.0.102 · released 2026-10-27</p>
+<section class="offer">
+<div class="os os-linux"><a class="btn" href="https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage">Download AppImage<small>any Linux · 15.7 MB</small></a></div><div class="os os-windows"><p>There is no Windows build of Forge 0.0.102. It runs on Linux; every file is listed below.</p></div><div class="os os-mac"><p>There is no macOS build of Forge 0.0.102. It runs on Linux; every file is listed below.</p></div><div class="os os-other"><p>Forge is a desktop app for Linux. Pick the file for your computer below.</p></div>
+</section>
+<h2>New in 0.0.102</h2><p class="notes">Forge now checks https://forge.hostport.net/latest.json for updates, so it finds new versions on its own.
+Also: an approval card names the thing it deletes, not its id.</p>
+<h2>Every file</h2>
+<ul class="files">
+<li><a class="name" href="https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage">HostportForge-0.0.102-x86_64.AppImage</a> <span class="what">any Linux · AppImage · 15.7 MB</span><div>sha256 <code>59fc140c8ae2b74692352942b28a069ec724366cb5ac4c1813c6c103a00c4512</code></div><div>Install: <code>chmod +x HostportForge-0.0.102-x86_64.AppImage &amp;&amp; ./HostportForge-0.0.102-x86_64.AppImage</code></div></li>
+</ul>
+<p>To check a download, run <code>sha256sum &lt;file&gt;</code> (on Windows <code>certutil -hashfile &lt;file&gt; SHA256</code>) and compare it with the sha256 above.</p>
+<h2>Updates</h2>
+<p>Forge looks for a new version shortly after it starts and shows an Update badge at the top of its window when there is one. Settings → Updates installs it:</p>
+<ul class="how"><li>AppImage: Forge replaces its own file once the sha256 matches; restart to run the new version.</li></ul>
+<p>Installed copies check <code>https://forge.hostport.net/latest.json</code> on their own; you change nothing.</p>
+<footer>Hostport Forge 0.0.102 · <a href="latest.json">latest.json</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "version": "0.0.102",
+  "pubDate": "2026-10-27T18:20:00Z",
+  "platforms": {
+    "linux-appimage": {
+      "url": "https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage",
+      "sha256": "59fc140c8ae2b74692352942b28a069ec724366cb5ac4c1813c6c103a00c4512",
+      "size": 15739384
+    }
+  },
+  "notes": "Forge now checks https://forge.hostport.net/latest.json for updates, so it finds new versions on its own.\nAlso: an approval card names the thing it deletes, not its id."
+}
