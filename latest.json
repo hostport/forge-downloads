@@ -1,12 +1,17 @@
 {
-  "version": "0.0.102",
-  "pubDate": "2026-10-27T18:20:00Z",
+  "version": "0.0.109",
+  "pubDate": "2026-11-25T18:05:16Z",
   "platforms": {
+    "linux-deb": {
+      "url": "https://forge.hostport.net/hostport-forge_0.0.109_amd64.deb",
+      "sha256": "356373740e30b4555e18336256ec9032617fc8ff84ad25e09154c6e0baed2654",
+      "size": 12976958
+    },
     "linux-appimage": {
-      "url": "https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage",
-      "sha256": "59fc140c8ae2b74692352942b28a069ec724366cb5ac4c1813c6c103a00c4512",
-      "size": 15739384
+      "url": "https://forge.hostport.net/HostportForge-0.0.109-x86_64.AppImage",
+      "sha256": "88d576c10055964e4d1076b56da11f64c4a65f6c52bd818b945f848a307f5ac3",
+      "size": 16120312
     }
   },
-  "notes": "Forge now checks https://forge.hostport.net/latest.json for updates, so it finds new versions on its own.\nAlso: an approval card names the thing it deletes, not its id."
+  "notes": "Worktree pool settings (Off / Limit / Smart Auto), Ubuntu 22.04 LTS + 24.04+ Linux release compatibility, WSL/WSLg screenshot pipeline fixes, Antigravity harness support, Observability Center and Scheduler service support, autonomous proof-card continuation, and UI-thread/HiDPI performance fixes."
 }

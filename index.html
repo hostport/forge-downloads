@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'sha256-R2AJnGIEwymW6L+w+l4TA7WgZfAd4hR7GILi46v5q1I='; base-uri 'none'; form-action 'none'">
-<title>Download Hostport Forge 0.0.102</title>
-<meta name="description" content="Hostport Forge 0.0.102 for Linux: a desktop home for AI agents that work in terminals.">
+<title>Download Hostport Forge 0.0.109</title>
+<meta name="description" content="Hostport Forge 0.0.109 for Linux: a desktop home for AI agents that work in terminals.">
 <style>
 :root {
   color-scheme: light dark;
@@ -80,22 +80,21 @@ footer { margin-top: 3rem; color: var(--faint); font-size: .85rem; }
 <main>
 <h1><span>Hostport</span> Forge</h1>
 <p class="lede">A desktop home for AI agents that work in terminals. Open a folder, run as many agents as you like side by side, and give them one board and one memory, kept as plain files they read and write the same as you.</p>
-<p class="meta">Version 0.0.102 · released 2026-10-27</p>
+<p class="meta">Version 0.0.109 · released 2026-11-25</p>
 <section class="offer">
-<div class="os os-linux"><a class="btn" href="https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage">Download AppImage<small>any Linux · 15.7 MB</small></a></div><div class="os os-windows"><p>There is no Windows build of Forge 0.0.102. It runs on Linux; every file is listed below.</p></div><div class="os os-mac"><p>There is no macOS build of Forge 0.0.102. It runs on Linux; every file is listed below.</p></div><div class="os os-other"><p>Forge is a desktop app for Linux. Pick the file for your computer below.</p></div>
+<div class="os os-linux"><a class="btn" href="https://forge.hostport.net/hostport-forge_0.0.109_amd64.deb">Download .deb<small>Debian, Ubuntu · 13.0 MB</small></a><a class="btn quiet" href="https://forge.hostport.net/HostportForge-0.0.109-x86_64.AppImage">Download AppImage<small>any Linux · 16.1 MB</small></a><p class="alt">On Debian or Ubuntu take the .deb; on any other distribution the AppImage, which runs without installing.</p></div><div class="os os-windows"><p>There is no Windows build of Forge 0.0.109. It runs on Linux; every file is listed below.</p></div><div class="os os-mac"><p>There is no macOS build of Forge 0.0.109. It runs on Linux; every file is listed below.</p></div><div class="os os-other"><p>Forge is a desktop app for Linux. Pick the file for your computer below.</p></div>
 </section>
-<h2>New in 0.0.102</h2><p class="notes">Forge now checks https://forge.hostport.net/latest.json for updates, so it finds new versions on its own.
-Also: an approval card names the thing it deletes, not its id.</p>
+<h2>New in 0.0.109</h2><p class="notes">Worktree pool settings (Off / Limit / Smart Auto), Ubuntu 22.04 LTS + 24.04+ Linux release compatibility, WSL/WSLg screenshot pipeline fixes, Antigravity harness support, Observability Center and Scheduler service support, autonomous proof-card continuation, and UI-thread/HiDPI performance fixes.</p>
 <h2>Every file</h2>
 <ul class="files">
-<li><a class="name" href="https://forge.hostport.net/HostportForge-0.0.102-x86_64.AppImage">HostportForge-0.0.102-x86_64.AppImage</a> <span class="what">any Linux · AppImage · 15.7 MB</span><div>sha256 <code>59fc140c8ae2b74692352942b28a069ec724366cb5ac4c1813c6c103a00c4512</code></div><div>Install: <code>chmod +x HostportForge-0.0.102-x86_64.AppImage &amp;&amp; ./HostportForge-0.0.102-x86_64.AppImage</code></div></li>
+<li><a class="name" href="https://forge.hostport.net/hostport-forge_0.0.109_amd64.deb">hostport-forge_0.0.109_amd64.deb</a> <span class="what">Debian, Ubuntu · .deb · 13.0 MB</span><div>sha256 <code>356373740e30b4555e18336256ec9032617fc8ff84ad25e09154c6e0baed2654</code></div><div>Install: <code>sudo apt install ./hostport-forge_0.0.109_amd64.deb</code></div></li><li><a class="name" href="https://forge.hostport.net/HostportForge-0.0.109-x86_64.AppImage">HostportForge-0.0.109-x86_64.AppImage</a> <span class="what">any Linux · AppImage · 16.1 MB</span><div>sha256 <code>88d576c10055964e4d1076b56da11f64c4a65f6c52bd818b945f848a307f5ac3</code></div><div>Install: <code>chmod +x HostportForge-0.0.109-x86_64.AppImage &amp;&amp; ./HostportForge-0.0.109-x86_64.AppImage</code></div></li>
 </ul>
 <p>To check a download, run <code>sha256sum &lt;file&gt;</code> (on Windows <code>certutil -hashfile &lt;file&gt; SHA256</code>) and compare it with the sha256 above.</p>
 <h2>Updates</h2>
 <p>Forge looks for a new version shortly after it starts and shows an Update badge at the top of its window when there is one. Settings → Updates installs it:</p>
-<ul class="how"><li>AppImage: Forge replaces its own file once the sha256 matches; restart to run the new version.</li></ul>
+<ul class="how"><li>.deb: Forge downloads the new package and shows the <code>sudo apt install</code> line to run, since a package install needs root.</li><li>AppImage: Forge replaces its own file once the sha256 matches; restart to run the new version.</li></ul>
 <p>Installed copies check <code>https://forge.hostport.net/latest.json</code> on their own; you change nothing.</p>
-<footer>Hostport Forge 0.0.102 · <a href="latest.json">latest.json</a></footer>
+<footer>Hostport Forge 0.0.109 · <a href="latest.json">latest.json</a></footer>
 </main>
 </body>
 </html>
